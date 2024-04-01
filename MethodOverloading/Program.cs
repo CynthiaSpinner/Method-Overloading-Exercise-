@@ -17,9 +17,9 @@ namespace MethodOverloading
 
             var decimalAnswer = Add(x, y);
 
-            var answer3 = Add(0, 27, true);
+            var answer3 = Add(0, 1, true);
 
-            Console.WriteLine($"interger add: {answer} decimal add: {decimalAnswer}");
+            Console.WriteLine($"integer add: {answer} decimal add: {decimalAnswer}");
             Console.WriteLine(answer3);
             
         }
