@@ -17,7 +17,7 @@ namespace MethodOverloading
 
             var decimalAnswer = Add(x, y);
 
-            var answer3 = Add(0, 1, true);
+            var answer3 = Add(0, 1, false);
 
             Console.WriteLine($"integer add: {answer} decimal add: {decimalAnswer}");
             Console.WriteLine(answer3);
@@ -49,14 +49,20 @@ namespace MethodOverloading
                 return $"{sum} dollar";
                 
             }
-            else if (dollars == false && sum == 1)
+            /*else if (dollars == false && sum == 1)
             {                           // is bool is always set to true this "else if " statement is unnessary
                 return $"{sum} dollar"; // I added the false to cover all 3 parameter possiblities
-            }                           // to make sure everything is grammatically correct.
-            else 
+            }  // to make sure everything is grammatically correct.*/
+            else if (dollars == false && sum == 1)
+            {
+                return sum.ToString() ;
+            }
+            
+            else
             {
                 return $"{sum} dollars";
             }
+            
 
         }
     }
